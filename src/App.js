@@ -1,24 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/style.css';
+import Card from './components/card'
+import React, { useState } from 'react';
 
 function App() {
+
+  const [filter, setFilter] = useState('name');
+  const [invert, setInvert] = useState('asc');
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <div className="AppContainer">
+
+
+      <div className="menu">
+        <div className="logo"> Country Query  </div>
+
+
+        <button className="button" onClick={() => setFilter("name")} > Name
+        </button>
+        <button className="button" onClick={() => setFilter("capital")}> Capital
+        </button>
+        <button className="button" onClick={() => setFilter("area")}> Area
+        </button>
+        <button className="button" onClick={() => setFilter("population")}> Population
+        </button>
+        <div className="orientation">
+          <button className="buttonArrow" onClick={() => setInvert("asc")}> <i class='fas fa-arrow-alt-circle-down'></i>
+          </button>
+
+          <button className="buttonArrow" onClick={() => setInvert("desc")}> <i class='fas fa-arrow-alt-circle-up'></i>
+          </button>
+
+        </div>
+
+      </div >
+      <div>
+        <Card filter={filter} invert={invert}></Card>
+      </div>
+    </div >
   );
 }
 

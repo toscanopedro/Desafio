@@ -1,0 +1,234 @@
+*:focus {
+  outline: 0;
+}
+
+/* --- Colors --- */
+/* --- Fonts --- */
+/* --- Home --- */
+.AppContainer {
+  background-color: #3C6E71;
+  min-height: 100vh;
+  min-width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.logo {
+  margin: auto;
+  margin-left: 2%;
+  font-family: "Monserrat", sans-serif;
+  color: #F2F7F2;
+  font-size: 10px;
+  text-shadow: 2px 2px #0F8B8D;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto;
+  background-color: #143642;
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  -webkit-box-shadow: 2px 2px 10px #143642;
+          box-shadow: 2px 2px 10px #143642;
+}
+
+.button {
+  margin: auto;
+  background-color: #143642;
+  border-radius: 4px;
+  color: #F2F7F2;
+  border: none;
+  font-size: 20px;
+}
+
+.orientation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+/* --- Card --- */
+.card {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #F2F7F2;
+  width: 70vw;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 2px 2px #143642;
+          box-shadow: 2px 2px #143642;
+}
+
+.cardContainer {
+  margin: auto;
+  margin-top: 5vh;
+  padding: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.titleCard {
+  margin: auto;
+  padding: 10%;
+  font-family: "Monserrat", sans-serif;
+  font-size: 25px;
+}
+
+.flagContainer {
+  margin: auto;
+}
+
+.flag {
+  height: 10vh;
+  margin: auto;
+  -webkit-box-shadow: 5px 5px #0F8B8D;
+          box-shadow: 5px 5px #0F8B8D;
+}
+
+.cardText {
+  margin: auto;
+}
+
+/* --- Desktop --- */
+@media only screen and (min-width: 400px) {
+  /* --- Home --- */
+  .AppContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .logo {
+    width: 20vw;
+    font-size: 20px;
+  }
+  .button {
+    width: 20vw;
+  }
+  .button:hover {
+    margin: auto;
+    background-color: #0F8B8D;
+    border-radius: 4px;
+    color: #F2F7F2;
+    border: none;
+    font-size: 20px;
+    height: 10vh;
+    width: 20vw;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+  }
+  .buttonArrow {
+    margin: auto;
+    background-color: #143642;
+    border-radius: 4px;
+    color: #F2F7F2;
+    border: none;
+    font-size: 20px;
+    width: 5vw;
+    height: 5vh;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+  }
+  .buttonArrow:hover {
+    background-color: #0F8B8D;
+    width: 5vw;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+  }
+  /* --- Card --- */
+  .card {
+    margin: auto;
+    width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #F2F7F2;
+    color: #143642;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    -webkit-box-shadow: 2px 2px #143642;
+            box-shadow: 2px 2px #143642;
+    margin-top: 15vh;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+  }
+  .card:hover {
+    background-color: #143642;
+    color: #F2F7F2;
+    -webkit-box-shadow: 2px 2px #F2F7F2;
+            box-shadow: 2px 2px #F2F7F2;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+  }
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .titleCard {
+    margin: auto;
+    padding: 10%;
+    font-family: "Monserrat", sans-serif;
+    font-size: 25px;
+  }
+  .flagContainer {
+    margin: auto;
+  }
+  .flag {
+    height: 10vh;
+    margin: auto;
+    -webkit-box-shadow: 5px 5px #0F8B8D;
+            box-shadow: 5px 5px #0F8B8D;
+  }
+  .cardText {
+    margin: auto;
+    margin-left: 5%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
